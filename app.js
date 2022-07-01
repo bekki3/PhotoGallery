@@ -107,10 +107,5 @@ app.post('/edit', (req, res)=>{
 
 // Step 9 - configure the server's port
 
-var port = process.env.PORT || '3000'
-app.listen(port, err => {
-	if (err)
-		throw err
-	console.log('Server listening on port', port)
-})
+app.listen(3000, ()=>{console.log("Listening...");})
 
